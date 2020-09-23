@@ -27,7 +27,7 @@ export const OrderResultDisplay: React.FC<Props> = (props: any) => {
                   }
 
                   {!currentOrder.orderSuccess && currentOrder.existingProductCount < 3 &&
-                    <h2>You have {3-order.data[0].existingProductCount} products available to purchase this month.</h2>
+                    <h2>You have {3-currentOrder.existingProductCount} products available to purchase this month.</h2>
                   }
 
                   {!currentOrder.orderSuccess && currentOrder.existingProductCount >= 3 &&

@@ -147,7 +147,6 @@ class OrderController extends Controller
 
                 if (in_array($field, $user->getFillable())) {
                     $userData[$field] = $value;
-                    continue;
                 }
             }
 
